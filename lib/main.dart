@@ -13,7 +13,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int value = 0;
-  void IncrementValue() {
+  void incrementValue() {
     setState(() {
       value++;
     });
@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ElevatedButton(
-                      onPressed: IncrementValue,
+                      onPressed: incrementValue,
                       style: ButtonStyle(
                         backgroundColor:
                             MaterialStateProperty.all<Color>(Colors.blue),
